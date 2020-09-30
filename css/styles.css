@@ -1,0 +1,103 @@
+/*body will be full height*/
+
+
+body,
+html {
+  height: 100%;
+}
+/*makes font lighter and sets default size*/
+body {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color:  #2d302e;
+}
+header {
+  background-color: #cbf1f1;
+}
+/*this makes my pic on the left smaller*/
+.intro-left {
+  background: url(../assets/portfoliobackground.png);
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  /*I want like 4 columns, 4/(4+8)= about 33.33333%*/
+  width: 33.3333%;
+  height: 100%;
+  color: #2d302e;
+  font-weight: 500;
+}
+
+.w3-tangerine {
+  font-family: 'Tangerine', serif;
+}
+
+/*768 is like a standard number of px for this*/
+@media (max-width: 768px) {
+  .intro-left {
+    height: 30vh;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+/*makes my pic round and smaller*/
+.profilepic {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+/*This is what makes the row with my pic into a full height row, so the pic can center in it and take up the left hand side of the paeg*/
+.full-height {
+  height: 100%;
+}
+/*just pulled from the bootstrap 5 quote and floated it to the right*/
+.quote {
+  float: right;
+}
+/*made some margins in between all the sections*/
+section {
+  margin: 5rem;
+  font-size: 1.2 rem;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+/*margin makes a teeny tiny footer*/
+.footer {
+  background-color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/*the z -1 keeps the background in the back, clip path works*/
+.background {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  clip-path: polygon(24% 0, 92% 0, 63% 100%, 20% 100%);
+}
+
+.my-name {
+font-weight: 600;
+font-family: Helvetica, sans-serif;
+}
+
+.aboutme {
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  }
+
+  .me-list {
+    font-weight: 300;
+    font-family: Helvetica, sans-serif;
+    }
+
+    .jumbotron{
+      background-image: url('assets/fl.png');
+      background-size: cover;
+      height: 100%;}
